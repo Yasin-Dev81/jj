@@ -140,3 +140,13 @@ vless://72b4bdf2-512a-405d-a084-88202bd56913@104.18.78.219:443?security=tls&sni=
 vless://72b4bdf2-512a-405d-a084-88202bd56913@188.114.99.29:443?security=tls&sni=cf.step-by-step.space&fp=chrome&type=grpc&serviceName=pizjgrpc#RezaJan-188.114.99.29
 vless://72b4bdf2-512a-405d-a084-88202bd56913@64.68.192.77:443?security=tls&sni=cf.step-by-step.space&fp=chrome&type=grpc&serviceName=pizjgrpc#RezaJan-64.68.192.77
 vless://72b4bdf2-512a-405d-a084-88202bd56913@104.25.255.254:443?security=tls&sni=cf.step-by-step.space&fp=chrome&type=grpc&serviceName=pizjgrpc#RezaJan-104.25.255.254
+vless://72b4bdf2-512a-405d-a084-88202bd56913@104.16.210.12:443?security=tls&sni=cf.step-by-step.space&fp=chrome&type=grpc&serviceName=pizjgrpc#RezaJan[104.16.210.12]
+vless://72b4bdf2-512a-405d-a084-88202bd56913@172.67.68.134:443?security=tls&sni=cf.step-by-step.space&fp=chrome&type=grpc&serviceName=pizjgrpc#RezaJan[172.67.68.134]
+vless://72b4bdf2-512a-405d-a084-88202bd56913@188.114.97.1:443?security=tls&sni=cf.step-by-step.space&fp=chrome&type=grpc&serviceName=pizjgrpc#RezaJan[188.114.97.1]
+vless://72b4bdf2-512a-405d-a084-88202bd56913@203.24.108.2:443?security=tls&sni=cf.step-by-step.space&fp=chrome&type=grpc&serviceName=pizjgrpc#RezaJan[203.24.108.2]
+vless://72b4bdf2-512a-405d-a084-88202bd56913@203.28.8.3:443?security=tls&sni=cf.step-by-step.space&fp=chrome&type=grpc&serviceName=pizjgrpc#RezaJan[203.28.8.3]
+vless://72b4bdf2-512a-405d-a084-88202bd56913@104.26.2.238:443?security=tls&sni=cf.step-by-step.space&fp=chrome&type=grpc&serviceName=pizjgrpc#RezaJan[104.26.2.238]
+vless://72b4bdf2-512a-405d-a084-88202bd56913@mci.ircf.space:443?security=tls&sni=cf.step-by-step.space&fp=chrome&type=grpc&serviceName=pizjgrpc#RezaJan[mci]
+vless://72b4bdf2-512a-405d-a084-88202bd56913@mtn.ircf.space:443?security=tls&sni=cf.step-by-step.space&fp=chrome&type=grpc&serviceName=pizjgrpc#RezaJan[mtn]
+vless://72b4bdf2-512a-405d-a084-88202bd56913@tgju.org:443?security=tls&sni=cf.step-by-step.space&fp=chrome&type=grpc&serviceName=pizjgrpc#RezaJan[tgju]
+vless://72b4bdf2-512a-405d-a084-88202bd56913@cf.step-by-step.space:443?security=tls&sni=cf.step-by-step.space&fp=chrome&type=grpc&serviceName=pizjgrpc#RezaJan
