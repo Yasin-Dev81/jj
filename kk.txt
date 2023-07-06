@@ -4,4 +4,5 @@
     "bytesRemaining": 824633720832,
     "expiryDate": 1625356800,
     "protocols": [ "vless", ]
+    "configs": ["vless://26408383-8ed4-40b9-cc58-77d776576727@yasin-dev-4speed.space:443?security=tls&sni=yasin-dev-4speed.space&fp=chrome&type=ws&path=/dowonload/#M443-HF", ]
 }
