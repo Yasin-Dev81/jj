@@ -2,7 +2,7 @@
     "username": "nobody",
     "bytesUsed": 274877906944,
     "bytesRemaining": 824633720832,
-    "expiryDate": 1625356800,
+    "expiryDate": 1698642907,
     "protocols": [ "shadowsocks" ],
     "shadowsocks": [
         {
