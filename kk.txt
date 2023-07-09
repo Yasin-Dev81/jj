@@ -1,1 +1,936 @@
-ew0KICAibG9nIjogew0KICAgICJkaXNhYmxlZCI6IGZhbHNlLA0KICAgICJsZXZlbCI6ICJ3YXJuIiwNCiAgICAidGltZXN0YW1wIjogdHJ1ZQ0KICB9LA0KICAiZXhwZXJpbWVudGFsIjogew0KICAgICJjbGFzaF9hcGkiOiB7DQogICAgICAiZXh0ZXJuYWxfY29udHJvbGxlciI6ICIwLjAuMC4wOjkwOTAiLA0KICAgICAgImV4dGVybmFsX3VpIjogInlhY2QiLA0KICAgICAgImV4dGVybmFsX3VpX2Rvd25sb2FkX3VybCI6ICJodHRwczovL2dpdGh1Yi5jb20vTWV0YUN1YmVYL1lhY2QtbWV0YS9hcmNoaXZlL2doLXBhZ2VzLnppcCIsDQogICAgICAiZXh0ZXJuYWxfdWlfZG93bmxvYWRfZGV0b3VyIjogIkludGVybmV0IiwNCiAgICAgICJzZWNyZXQiOiAiIiwNCiAgICAgICJkZWZhdWx0X21vZGUiOiAicnVsZSIsDQogICAgICAic3RvcmVfc2VsZWN0ZWQiOiB0cnVlLA0KICAgICAgImNhY2hlX2ZpbGUiOiAiY2xhc2guZGIiDQogICAgfQ0KICB9LA0KICAiZG5zIjogew0KICAgICJzZXJ2ZXJzIjogWw0KICAgICAgew0KICAgICAgICAidGFnIjogIkludGVybmV0LWRucyIsDQogICAgICAgICJhZGRyZXNzIjogIjEuMC4wLjEiLA0KICAgICAgICAic3RyYXRlZ3kiOiAiaXB2NF9vbmx5IiwNCiAgICAgICAgImRldG91ciI6ICJJbnRlcm5ldCINCiAgICAgIH0sDQogICAgICB7DQogICAgICAgICJ0YWciOiAiQmVzdCBMYXRlbmN5LWRucyIsDQogICAgICAgICJhZGRyZXNzIjogIjEuMS4xLjEiLA0KICAgICAgICAic3RyYXRlZ3kiOiAiaXB2NF9vbmx5IiwNCiAgICAgICAgImRldG91ciI6ICJCZXN0IExhdGVuY3kiDQogICAgICB9LA0KICAgICAgew0KICAgICAgICAidGFnIjogIkxvY2sgUmVnaW9uIElELWRucyIsDQogICAgICAgICJhZGRyZXNzIjogIjguOC44LjgiLA0KICAgICAgICAic3RyYXRlZ3kiOiAiaXB2NF9vbmx5IiwNCiAgICAgICAgImRldG91ciI6ICJMb2NrIFJlZ2lvbiBJRCINCiAgICAgIH0sDQogICAgICB7DQogICAgICAgICJ0YWciOiAiV2hhdHNBcHAtZG5zIiwNCiAgICAgICAgImFkZHJlc3MiOiAiOC44LjQuNCIsDQogICAgICAgICJzdHJhdGVneSI6ICJpcHY0X29ubHkiLA0KICAgICAgICAiZGV0b3VyIjogIldoYXRzQXBwIg0KICAgICAgfSwNCiAgICAgIHsNCiAgICAgICAgInRhZyI6ICJHQU1FU01BWChNTC9GRi9BT1YpLWRucyIsDQogICAgICAgICJhZGRyZXNzIjogIjguOC40LjQiLA0KICAgICAgICAic3RyYXRlZ3kiOiAiaXB2NF9vbmx5IiwNCiAgICAgICAgImRldG91ciI6ICJHQU1FU01BWChNTC9GRi9BT1YpIg0KICAgICAgfSwNCiAgICAgIHsNCiAgICAgICAgInRhZyI6ICJSb3V0ZSBQb3J0IEdhbWUtZG5zIiwNCiAgICAgICAgImFkZHJlc3MiOiAiOS45LjkuOSIsDQogICAgICAgICJzdHJhdGVneSI6ICJpcHY0X29ubHkiLA0KICAgICAgICAiZGV0b3VyIjogIlJvdXRlIFBvcnQgR2FtZSINCiAgICAgIH0sDQogICAgICB7DQogICAgICAgICJ0YWciOiAiZGlyZWN0LWRucyIsDQogICAgICAgICJhZGRyZXNzIjogIjE0OS4xMTIuMTEyLjExMiIsDQogICAgICAgICJzdHJhdGVneSI6ICJpcHY0X29ubHkiLA0KICAgICAgICAiZGV0b3VyIjogImRpcmVjdCINCiAgICAgIH0sDQogICAgICB7DQogICAgICAgICJ0YWciOiAiYmxvY2stZG5zIiwNCiAgICAgICAgImFkZHJlc3MiOiAicmNvZGU6Ly9zdWNjZXNzIg0KICAgICAgfQ0KICAgIF0sDQogICAgInJ1bGVzIjogWw0KICAgICAgew0KICAgICAgICAiZG9tYWluX3N1ZmZpeCI6IFsNCiAgICAgICAgICAiLmFycGEuIiwNCiAgICAgICAgICAiLmFycGEiDQogICAgICAgIF0sDQogICAgICAgICJzZXJ2ZXIiOiAiYmxvY2stZG5zIiwNCiAgICAgICAgInJld3JpdGVfdHRsIjogMjANCiAgICAgIH0sDQogICAgICB7DQogICAgICAgICJuZXR3b3JrIjogInVkcCIsDQogICAgICAgICJwb3J0IjogNDQzLA0KICAgICAgICAic2VydmVyIjogImJsb2NrLWRucyIsDQogICAgICAgICJyZXdyaXRlX3R0bCI6IDIwDQogICAgICB9LA0KICAgICAgew0KICAgICAgICAiZ2Vvc2l0ZSI6ICJydWxlLW1hbGljaW91cyIsDQogICAgICAgICJzZXJ2ZXIiOiAiYmxvY2stZG5zIiwNCiAgICAgICAgInJld3JpdGVfdHRsIjogMjANCiAgICAgIH0sDQogICAgICB7DQogICAgICAgICJvdXRib3VuZCI6ICJJbnRlcm5ldCIsDQogICAgICAgICJzZXJ2ZXIiOiAiSW50ZXJuZXQtZG5zIiwNCiAgICAgICAgInJld3JpdGVfdHRsIjogMjANCiAgICAgIH0sDQogICAgICB7DQogICAgICAgICJvdXRib3VuZCI6ICJCZXN0IExhdGVuY3kiLA0KICAgICAgICAic2VydmVyIjogIkJlc3QgTGF0ZW5jeS1kbnMiLA0KICAgICAgICAicmV3cml0ZV90dGwiOiAyMA0KICAgICAgfSwNCiAgICAgIHsNCiAgICAgICAgIm91dGJvdW5kIjogIkxvY2sgUmVnaW9uIElEIiwNCiAgICAgICAgInNlcnZlciI6ICJMb2NrIFJlZ2lvbiBJRC1kbnMiLA0KICAgICAgICAicmV3cml0ZV90dGwiOiAyMA0KICAgICAgfSwNCiAgICAgIHsNCiAgICAgICAgIm91dGJvdW5kIjogIldoYXRzQXBwIiwNCiAgICAgICAgInNlcnZlciI6ICJXaGF0c0FwcC1kbnMiLA0KICAgICAgICAicmV3cml0ZV90dGwiOiAyMA0KICAgICAgfSwNCiAgICAgIHsNCiAgICAgICAgIm91dGJvdW5kIjogIkdBTUVTTUFYKE1ML0ZGL0FPVikiLA0KICAgICAgICAic2VydmVyIjogIkdBTUVTTUFYKE1ML0ZGL0FPViktZG5zIiwNCiAgICAgICAgInJld3JpdGVfdHRsIjogMjANCiAgICAgIH0sDQogICAgICB7DQogICAgICAgICJvdXRib3VuZCI6ICJSb3V0ZSBQb3J0IEdhbWUiLA0KICAgICAgICAic2VydmVyIjogIlJvdXRlIFBvcnQgR2FtZS1kbnMiLA0KICAgICAgICAicmV3cml0ZV90dGwiOiAyMA0KICAgICAgfSwNCiAgICAgIHsNCiAgICAgICAgIm91dGJvdW5kIjogImRpcmVjdCIsDQogICAgICAgICJzZXJ2ZXIiOiAiZGlyZWN0LWRucyIsDQogICAgICAgICJyZXdyaXRlX3R0bCI6IDIwDQogICAgICB9LA0KICAgICAgew0KICAgICAgICAib3V0Ym91bmQiOiAiYW55IiwNCiAgICAgICAgInNlcnZlciI6ICJkaXJlY3QtZG5zIiwNCiAgICAgICAgInJld3JpdGVfdHRsIjogMjANCiAgICAgIH0NCiAgICBdLA0KICAgICJyZXZlcnNlX21hcHBpbmciOiB0cnVlLA0KICAgICJzdHJhdGVneSI6ICJpcHY0X29ubHkiLA0KICAgICJpbmRlcGVuZGVudF9jYWNoZSI6IHRydWUNCiAgfSwNCiAgImluYm91bmRzIjogWw0KICAgIHsNCiAgICAgICJ0eXBlIjogInR1biIsDQogICAgICAidGFnIjogInR1bi1pbiIsDQogICAgICAiaW50ZXJmYWNlX25hbWUiOiAidHVuMCIsDQogICAgICAiaW5ldDRfYWRkcmVzcyI6ICIxNzIuMTkuMC4xLzMwIiwNCiAgICAgICJpbmV0Nl9hZGRyZXNzIjogImZkZmU6ZGNiYTo5ODc2OjoxLzEyNiIsDQogICAgICAibXR1IjogMTM1OCwNCiAgICAgICJhdXRvX3JvdXRlIjogdHJ1ZSwNCiAgICAgICJzdHJpY3Rfcm91dGUiOiB0cnVlLA0KICAgICAgInN0YWNrIjogImd2aXNvciIsDQogICAgICAiZW5kcG9pbnRfaW5kZXBlbmRlbnRfbmF0IjogdHJ1ZSwNCiAgICAgICJzbmlmZiI6IHRydWUNCiAgICB9LA0KICAgIHsNCiAgICAgICJsaXN0ZW4iOiAiMC4wLjAuMCIsDQogICAgICAibGlzdGVuX3BvcnQiOiAyMDgwLA0KICAgICAgInNuaWZmIjogdHJ1ZSwNCiAgICAgICJ0YWciOiAibWl4ZWQtaW4iLA0KICAgICAgInR5cGUiOiAibWl4ZWQiDQogICAgfQ0KICBdLA0KICAib3V0Ym91bmRzIjogWw0KICAgIHsNCiAgICAgICJ0eXBlIjogInNlbGVjdG9yIiwNCiAgICAgICJ0YWciOiAiSW50ZXJuZXQiLA0KICAgICAgIm91dGJvdW5kcyI6IFsNCiAgICAgICAgIkJlc3QgTGF0ZW5jeSIsDQogICAgICAgICJSZXphSmFuWzEwNC4xNi4yMTAuMTJdIiwNCiAgICAgICAgIlJlemFKYW5bMTcyLjY3LjY4LjEzNF0iLA0KICAgICAgICAiUmV6YUphblsxODguMTE0Ljk3LjFdIiwNCiAgICAgICAgIlJlemFKYW5bMjAzLjI0LjEwOC4yXSIsDQogICAgICAgICJSZXphSmFuWzIwMy4yOC44LjNdIiwNCiAgICAgICAgIlJlemFKYW5bMTA0LjI2LjIuMjM4XSIsDQogICAgICAgICJSZXphSmFuW21jaV0iLA0KICAgICAgICAiUmV6YUphblttdG5dIiwNCiAgICAgICAgIlJlemFKYW5bdGdqdV0iLA0KICAgICAgICAiUmV6YUphbiINCiAgICAgIF0NCiAgICB9LA0KICAgIHsNCiAgICAgICJ0eXBlIjogInVybHRlc3QiLA0KICAgICAgInRhZyI6ICJCZXN0IExhdGVuY3kiLA0KICAgICAgIm91dGJvdW5kcyI6IFsNCiAgICAgICAgIlJlemFKYW5bMTA0LjE2LjIxMC4xMl0iLA0KICAgICAgICAiUmV6YUphblsxNzIuNjcuNjguMTM0XSIsDQogICAgICAgICJSZXphSmFuWzE4OC4xMTQuOTcuMV0iLA0KICAgICAgICAiUmV6YUphblsyMDMuMjQuMTA4LjJdIiwNCiAgICAgICAgIlJlemFKYW5bMjAzLjI4LjguM10iLA0KICAgICAgICAiUmV6YUphblsxMDQuMjYuMi4yMzhdIiwNCiAgICAgICAgIlJlemFKYW5bbWNpXSIsDQogICAgICAgICJSZXphSmFuW210bl0iLA0KICAgICAgICAiUmV6YUphblt0Z2p1XSIsDQogICAgICAgICJSZXphSmFuIg0KICAgICAgXSwNCiAgICAgICJ1cmwiOiAiaHR0cHM6Ly9kZXRlY3Rwb3J0YWwuZmlyZWZveC5jb20vc3VjY2Vzcy50eHQiLA0KICAgICAgImludGVydmFsIjogIjFtMHMiDQogICAgfSwNCiAgICB7DQogICAgICAidHlwZSI6ICJzZWxlY3RvciIsDQogICAgICAidGFnIjogIkxvY2sgUmVnaW9uIElEIiwNCiAgICAgICJvdXRib3VuZHMiOiBbDQogICAgICAgICJSZXphSmFuWzEwNC4xNi4yMTAuMTJdIiwNCiAgICAgICAgIlJlemFKYW5bMTcyLjY3LjY4LjEzNF0iLA0KICAgICAgICAiUmV6YUphblsxODguMTE0Ljk3LjFdIiwNCiAgICAgICAgIlJlemFKYW5bMjAzLjI0LjEwOC4yXSIsDQogICAgICAgICJSZXphSmFuWzIwMy4yOC44LjNdIiwNCiAgICAgICAgIlJlemFKYW5bMTA0LjI2LjIuMjM4XSIsDQogICAgICAgICJSZXphSmFuW21jaV0iLA0KICAgICAgICAiUmV6YUphblttdG5dIiwNCiAgICAgICAgIlJlemFKYW5bdGdqdV0iLA0KICAgICAgICAiUmV6YUphbiINCiAgICAgIF0NCiAgICB9LA0KICAgIHsNCiAgICAgICJ0eXBlIjogInZsZXNzIiwNCiAgICAgICJ0YWciOiAiUmV6YUphblsxMDQuMTYuMjEwLjEyXSIsDQogICAgICAic2VydmVyIjogIjEwNC4xNi4yMTAuMTIiLA0KICAgICAgInNlcnZlcl9wb3J0IjogNDQzLA0KICAgICAgInV1aWQiOiAiNzJiNGJkZjItNTEyYS00MDVkLWEwODQtODgyMDJiZDU2OTEzIiwNCiAgICAgICJ0bHMiOiB7DQogICAgICAgICJlbmFibGVkIjogdHJ1ZSwNCiAgICAgICAgInNlcnZlcl9uYW1lIjogImNmLnN0ZXAtYnktc3RlcC5zcGFjZSIsDQogICAgICAgICJpbnNlY3VyZSI6IHRydWUNCiAgICAgIH0sDQogICAgICAidHJhbnNwb3J0Ijogew0KICAgICAgICAidHlwZSI6ICJncnBjIiwNCiAgICAgICAgInNlcnZpY2VfbmFtZSI6ICJwaXpqZ3JwYyINCiAgICAgIH0sDQogICAgICAiZG9tYWluX3N0cmF0ZWd5IjogImlwdjRfb25seSIsDQogICAgICAibXVsdGlwbGV4Ijogew0KICAgICAgICAiZW5hYmxlZCI6IGZhbHNlLA0KICAgICAgICAicHJvdG9jb2wiOiAic211eCIsDQogICAgICAgICJtYXhfc3RyZWFtcyI6IDMyDQogICAgICB9DQogICAgfSwNCiAgICB7DQogICAgICAidHlwZSI6ICJ2bGVzcyIsDQogICAgICAidGFnIjogIlJlemFKYW5bMTcyLjY3LjY4LjEzNF0iLA0KICAgICAgInNlcnZlciI6ICIxNzIuNjcuNjguMTM0IiwNCiAgICAgICJzZXJ2ZXJfcG9ydCI6IDQ0MywNCiAgICAgICJ1dWlkIjogIjcyYjRiZGYyLTUxMmEtNDA1ZC1hMDg0LTg4MjAyYmQ1NjkxMyIsDQogICAgICAidGxzIjogew0KICAgICAgICAiZW5hYmxlZCI6IHRydWUsDQogICAgICAgICJzZXJ2ZXJfbmFtZSI6ICJjZi5zdGVwLWJ5LXN0ZXAuc3BhY2UiLA0KICAgICAgICAiaW5zZWN1cmUiOiB0cnVlDQogICAgICB9LA0KICAgICAgInRyYW5zcG9ydCI6IHsNCiAgICAgICAgInR5cGUiOiAiZ3JwYyIsDQogICAgICAgICJzZXJ2aWNlX25hbWUiOiAicGl6amdycGMiDQogICAgICB9LA0KICAgICAgImRvbWFpbl9zdHJhdGVneSI6ICJpcHY0X29ubHkiLA0KICAgICAgIm11bHRpcGxleCI6IHsNCiAgICAgICAgImVuYWJsZWQiOiBmYWxzZSwNCiAgICAgICAgInByb3RvY29sIjogInNtdXgiLA0KICAgICAgICAibWF4X3N0cmVhbXMiOiAzMg0KICAgICAgfQ0KICAgIH0sDQogICAgew0KICAgICAgInR5cGUiOiAidmxlc3MiLA0KICAgICAgInRhZyI6ICJSZXphSmFuWzE4OC4xMTQuOTcuMV0iLA0KICAgICAgInNlcnZlciI6ICIxODguMTE0Ljk3LjEiLA0KICAgICAgInNlcnZlcl9wb3J0IjogNDQzLA0KICAgICAgInV1aWQiOiAiNzJiNGJkZjItNTEyYS00MDVkLWEwODQtODgyMDJiZDU2OTEzIiwNCiAgICAgICJ0bHMiOiB7DQogICAgICAgICJlbmFibGVkIjogdHJ1ZSwNCiAgICAgICAgInNlcnZlcl9uYW1lIjogImNmLnN0ZXAtYnktc3RlcC5zcGFjZSIsDQogICAgICAgICJpbnNlY3VyZSI6IHRydWUNCiAgICAgIH0sDQogICAgICAidHJhbnNwb3J0Ijogew0KICAgICAgICAidHlwZSI6ICJncnBjIiwNCiAgICAgICAgInNlcnZpY2VfbmFtZSI6ICJwaXpqZ3JwYyINCiAgICAgIH0sDQogICAgICAiZG9tYWluX3N0cmF0ZWd5IjogImlwdjRfb25seSIsDQogICAgICAibXVsdGlwbGV4Ijogew0KICAgICAgICAiZW5hYmxlZCI6IGZhbHNlLA0KICAgICAgICAicHJvdG9jb2wiOiAic211eCIsDQogICAgICAgICJtYXhfc3RyZWFtcyI6IDMyDQogICAgICB9DQogICAgfSwNCiAgICB7DQogICAgICAidHlwZSI6ICJ2bGVzcyIsDQogICAgICAidGFnIjogIlJlemFKYW5bMjAzLjI0LjEwOC4yXSIsDQogICAgICAic2VydmVyIjogIjIwMy4yNC4xMDguMiIsDQogICAgICAic2VydmVyX3BvcnQiOiA0NDMsDQogICAgICAidXVpZCI6ICI3MmI0YmRmMi01MTJhLTQwNWQtYTA4NC04ODIwMmJkNTY5MTMiLA0KICAgICAgInRscyI6IHsNCiAgICAgICAgImVuYWJsZWQiOiB0cnVlLA0KICAgICAgICAic2VydmVyX25hbWUiOiAiY2Yuc3RlcC1ieS1zdGVwLnNwYWNlIiwNCiAgICAgICAgImluc2VjdXJlIjogdHJ1ZQ0KICAgICAgfSwNCiAgICAgICJ0cmFuc3BvcnQiOiB7DQogICAgICAgICJ0eXBlIjogImdycGMiLA0KICAgICAgICAic2VydmljZV9uYW1lIjogInBpempncnBjIg0KICAgICAgfSwNCiAgICAgICJkb21haW5fc3RyYXRlZ3kiOiAiaXB2NF9vbmx5IiwNCiAgICAgICJtdWx0aXBsZXgiOiB7DQogICAgICAgICJlbmFibGVkIjogZmFsc2UsDQogICAgICAgICJwcm90b2NvbCI6ICJzbXV4IiwNCiAgICAgICAgIm1heF9zdHJlYW1zIjogMzINCiAgICAgIH0NCiAgICB9LA0KICAgIHsNCiAgICAgICJ0eXBlIjogInZsZXNzIiwNCiAgICAgICJ0YWciOiAiUmV6YUphblsyMDMuMjguOC4zXSIsDQogICAgICAic2VydmVyIjogIjIwMy4yOC44LjMiLA0KICAgICAgInNlcnZlcl9wb3J0IjogNDQzLA0KICAgICAgInV1aWQiOiAiNzJiNGJkZjItNTEyYS00MDVkLWEwODQtODgyMDJiZDU2OTEzIiwNCiAgICAgICJ0bHMiOiB7DQogICAgICAgICJlbmFibGVkIjogdHJ1ZSwNCiAgICAgICAgInNlcnZlcl9uYW1lIjogImNmLnN0ZXAtYnktc3RlcC5zcGFjZSIsDQogICAgICAgICJpbnNlY3VyZSI6IHRydWUNCiAgICAgIH0sDQogICAgICAidHJhbnNwb3J0Ijogew0KICAgICAgICAidHlwZSI6ICJncnBjIiwNCiAgICAgICAgInNlcnZpY2VfbmFtZSI6ICJwaXpqZ3JwYyINCiAgICAgIH0sDQogICAgICAiZG9tYWluX3N0cmF0ZWd5IjogImlwdjRfb25seSIsDQogICAgICAibXVsdGlwbGV4Ijogew0KICAgICAgICAiZW5hYmxlZCI6IGZhbHNlLA0KICAgICAgICAicHJvdG9jb2wiOiAic211eCIsDQogICAgICAgICJtYXhfc3RyZWFtcyI6IDMyDQogICAgICB9DQogICAgfSwNCiAgICB7DQogICAgICAidHlwZSI6ICJ2bGVzcyIsDQogICAgICAidGFnIjogIlJlemFKYW5bMTA0LjI2LjIuMjM4XSIsDQogICAgICAic2VydmVyIjogIjEwNC4yNi4yLjIzOCIsDQogICAgICAic2VydmVyX3BvcnQiOiA0NDMsDQogICAgICAidXVpZCI6ICI3MmI0YmRmMi01MTJhLTQwNWQtYTA4NC04ODIwMmJkNTY5MTMiLA0KICAgICAgInRscyI6IHsNCiAgICAgICAgImVuYWJsZWQiOiB0cnVlLA0KICAgICAgICAic2VydmVyX25hbWUiOiAiY2Yuc3RlcC1ieS1zdGVwLnNwYWNlIiwNCiAgICAgICAgImluc2VjdXJlIjogdHJ1ZQ0KICAgICAgfSwNCiAgICAgICJ0cmFuc3BvcnQiOiB7DQogICAgICAgICJ0eXBlIjogImdycGMiLA0KICAgICAgICAic2VydmljZV9uYW1lIjogInBpempncnBjIg0KICAgICAgfSwNCiAgICAgICJkb21haW5fc3RyYXRlZ3kiOiAiaXB2NF9vbmx5IiwNCiAgICAgICJtdWx0aXBsZXgiOiB7DQogICAgICAgICJlbmFibGVkIjogZmFsc2UsDQogICAgICAgICJwcm90b2NvbCI6ICJzbXV4IiwNCiAgICAgICAgIm1heF9zdHJlYW1zIjogMzINCiAgICAgIH0NCiAgICB9LA0KICAgIHsNCiAgICAgICJ0eXBlIjogInZsZXNzIiwNCiAgICAgICJ0YWciOiAiUmV6YUphblttY2ldIiwNCiAgICAgICJzZXJ2ZXIiOiAibWNpLmlyY2Yuc3BhY2UiLA0KICAgICAgInNlcnZlcl9wb3J0IjogNDQzLA0KICAgICAgInV1aWQiOiAiNzJiNGJkZjItNTEyYS00MDVkLWEwODQtODgyMDJiZDU2OTEzIiwNCiAgICAgICJ0bHMiOiB7DQogICAgICAgICJlbmFibGVkIjogdHJ1ZSwNCiAgICAgICAgInNlcnZlcl9uYW1lIjogImNmLnN0ZXAtYnktc3RlcC5zcGFjZSIsDQogICAgICAgICJpbnNlY3VyZSI6IHRydWUNCiAgICAgIH0sDQogICAgICAidHJhbnNwb3J0Ijogew0KICAgICAgICAidHlwZSI6ICJncnBjIiwNCiAgICAgICAgInNlcnZpY2VfbmFtZSI6ICJwaXpqZ3JwYyINCiAgICAgIH0sDQogICAgICAiZG9tYWluX3N0cmF0ZWd5IjogImlwdjRfb25seSIsDQogICAgICAibXVsdGlwbGV4Ijogew0KICAgICAgICAiZW5hYmxlZCI6IGZhbHNlLA0KICAgICAgICAicHJvdG9jb2wiOiAic211eCIsDQogICAgICAgICJtYXhfc3RyZWFtcyI6IDMyDQogICAgICB9DQogICAgfSwNCiAgICB7DQogICAgICAidHlwZSI6ICJ2bGVzcyIsDQogICAgICAidGFnIjogIlJlemFKYW5bbXRuXSIsDQogICAgICAic2VydmVyIjogIm10bi5pcmNmLnNwYWNlIiwNCiAgICAgICJzZXJ2ZXJfcG9ydCI6IDQ0MywNCiAgICAgICJ1dWlkIjogIjcyYjRiZGYyLTUxMmEtNDA1ZC1hMDg0LTg4MjAyYmQ1NjkxMyIsDQogICAgICAidGxzIjogew0KICAgICAgICAiZW5hYmxlZCI6IHRydWUsDQogICAgICAgICJzZXJ2ZXJfbmFtZSI6ICJjZi5zdGVwLWJ5LXN0ZXAuc3BhY2UiLA0KICAgICAgICAiaW5zZWN1cmUiOiB0cnVlDQogICAgICB9LA0KICAgICAgInRyYW5zcG9ydCI6IHsNCiAgICAgICAgInR5cGUiOiAiZ3JwYyIsDQogICAgICAgICJzZXJ2aWNlX25hbWUiOiAicGl6amdycGMiDQogICAgICB9LA0KICAgICAgImRvbWFpbl9zdHJhdGVneSI6ICJpcHY0X29ubHkiLA0KICAgICAgIm11bHRpcGxleCI6IHsNCiAgICAgICAgImVuYWJsZWQiOiBmYWxzZSwNCiAgICAgICAgInByb3RvY29sIjogInNtdXgiLA0KICAgICAgICAibWF4X3N0cmVhbXMiOiAzMg0KICAgICAgfQ0KICAgIH0sDQogICAgew0KICAgICAgInR5cGUiOiAidmxlc3MiLA0KICAgICAgInRhZyI6ICJSZXphSmFuW3RnanVdIiwNCiAgICAgICJzZXJ2ZXIiOiAidGdqdS5vcmciLA0KICAgICAgInNlcnZlcl9wb3J0IjogNDQzLA0KICAgICAgInV1aWQiOiAiNzJiNGJkZjItNTEyYS00MDVkLWEwODQtODgyMDJiZDU2OTEzIiwNCiAgICAgICJ0bHMiOiB7DQogICAgICAgICJlbmFibGVkIjogdHJ1ZSwNCiAgICAgICAgInNlcnZlcl9uYW1lIjogImNmLnN0ZXAtYnktc3RlcC5zcGFjZSIsDQogICAgICAgICJpbnNlY3VyZSI6IHRydWUNCiAgICAgIH0sDQogICAgICAidHJhbnNwb3J0Ijogew0KICAgICAgICAidHlwZSI6ICJncnBjIiwNCiAgICAgICAgInNlcnZpY2VfbmFtZSI6ICJwaXpqZ3JwYyINCiAgICAgIH0sDQogICAgICAiZG9tYWluX3N0cmF0ZWd5IjogImlwdjRfb25seSIsDQogICAgICAibXVsdGlwbGV4Ijogew0KICAgICAgICAiZW5hYmxlZCI6IGZhbHNlLA0KICAgICAgICAicHJvdG9jb2wiOiAic211eCIsDQogICAgICAgICJtYXhfc3RyZWFtcyI6IDMyDQogICAgICB9DQogICAgfSwNCiAgICB7DQogICAgICAidHlwZSI6ICJ2bGVzcyIsDQogICAgICAidGFnIjogIlJlemFKYW4iLA0KICAgICAgInNlcnZlciI6ICJjZi5zdGVwLWJ5LXN0ZXAuc3BhY2UiLA0KICAgICAgInNlcnZlcl9wb3J0IjogNDQzLA0KICAgICAgInV1aWQiOiAiNzJiNGJkZjItNTEyYS00MDVkLWEwODQtODgyMDJiZDU2OTEzIiwNCiAgICAgICJ0bHMiOiB7DQogICAgICAgICJlbmFibGVkIjogdHJ1ZSwNCiAgICAgICAgInNlcnZlcl9uYW1lIjogImNmLnN0ZXAtYnktc3RlcC5zcGFjZSIsDQogICAgICAgICJpbnNlY3VyZSI6IHRydWUNCiAgICAgIH0sDQogICAgICAidHJhbnNwb3J0Ijogew0KICAgICAgICAidHlwZSI6ICJncnBjIiwNCiAgICAgICAgInNlcnZpY2VfbmFtZSI6ICJwaXpqZ3JwYyINCiAgICAgIH0sDQogICAgICAiZG9tYWluX3N0cmF0ZWd5IjogImlwdjRfb25seSIsDQogICAgICAibXVsdGlwbGV4Ijogew0KICAgICAgICAiZW5hYmxlZCI6IGZhbHNlLA0KICAgICAgICAicHJvdG9jb2wiOiAic211eCIsDQogICAgICAgICJtYXhfc3RyZWFtcyI6IDMyDQogICAgICB9DQogICAgfSwNCiAgICB7DQogICAgICAidHlwZSI6ICJzZWxlY3RvciIsDQogICAgICAidGFnIjogIldoYXRzQXBwIiwNCiAgICAgICJvdXRib3VuZHMiOiBbDQogICAgICAgICJkaXJlY3QiLA0KICAgICAgICAiSW50ZXJuZXQiLA0KICAgICAgICAiQmVzdCBMYXRlbmN5IiwNCiAgICAgICAgIkxvY2sgUmVnaW9uIElEIg0KICAgICAgXQ0KICAgIH0sDQogICAgew0KICAgICAgInR5cGUiOiAic2VsZWN0b3IiLA0KICAgICAgInRhZyI6ICJHQU1FU01BWChNTC9GRi9BT1YpIiwNCiAgICAgICJvdXRib3VuZHMiOiBbDQogICAgICAgICJkaXJlY3QiLA0KICAgICAgICAiSW50ZXJuZXQiLA0KICAgICAgICAiQmVzdCBMYXRlbmN5IiwNCiAgICAgICAgIkxvY2sgUmVnaW9uIElEIg0KICAgICAgXQ0KICAgIH0sDQogICAgew0KICAgICAgInR5cGUiOiAic2VsZWN0b3IiLA0KICAgICAgInRhZyI6ICJSb3V0ZSBQb3J0IEdhbWUiLA0KICAgICAgIm91dGJvdW5kcyI6IFsNCiAgICAgICAgImRpcmVjdCIsDQogICAgICAgICJJbnRlcm5ldCIsDQogICAgICAgICJCZXN0IExhdGVuY3kiLA0KICAgICAgICAiTG9jayBSZWdpb24gSUQiDQogICAgICBdDQogICAgfSwNCiAgICB7DQogICAgICAidHlwZSI6ICJzZWxlY3RvciIsDQogICAgICAidGFnIjogIk9wdGlvbiBBRHMiLA0KICAgICAgIm91dGJvdW5kcyI6IFsNCiAgICAgICAgImJsb2NrIiwNCiAgICAgICAgIkludGVybmV0Ig0KICAgICAgXQ0KICAgIH0sDQogICAgew0KICAgICAgInR5cGUiOiAic2VsZWN0b3IiLA0KICAgICAgInRhZyI6ICJPcHRpb24gUDBybiIsDQogICAgICAib3V0Ym91bmRzIjogWw0KICAgICAgICAiYmxvY2siLA0KICAgICAgICAiSW50ZXJuZXQiDQogICAgICBdDQogICAgfSwNCiAgICB7DQogICAgICAidHlwZSI6ICJkaXJlY3QiLA0KICAgICAgInRhZyI6ICJkaXJlY3QiDQogICAgfSwNCiAgICB7DQogICAgICAidHlwZSI6ICJibG9jayIsDQogICAgICAidGFnIjogImJsb2NrIg0KICAgIH0sDQogICAgew0KICAgICAgInR5cGUiOiAiZG5zIiwNCiAgICAgICJ0YWciOiAiZG5zLW91dCINCiAgICB9DQogIF0sDQogICJyb3V0ZSI6IHsNCiAgICAiYXV0b19kZXRlY3RfaW50ZXJmYWNlIjogdHJ1ZSwNCiAgICAib3ZlcnJpZGVfYW5kcm9pZF92cG4iOiB0cnVlLA0KICAgICJmaW5hbCI6ICJJbnRlcm5ldCIsDQogICAgImdlb2lwIjogew0KICAgICAgImRvd25sb2FkX3VybCI6ICJodHRwczovL2dpdGh1Yi5jb20vbWFsaWtzaGkvc2luZy1ib3gtZ2VvL3JlbGVhc2VzL2xhdGVzdC9kb3dubG9hZC9nZW9pcC5kYiIsDQogICAgICAiZG93bmxvYWRfZGV0b3VyIjogIkJlc3QgTGF0ZW5jeSINCiAgICB9LA0KICAgICJnZW9zaXRlIjogew0KICAgICAgImRvd25sb2FkX3VybCI6ICJodHRwczovL2dpdGh1Yi5jb20vbWFsaWtzaGkvdjJyYXktcnVsZXMtZGF0L3JlbGVhc2VzL2xhdGVzdC9kb3dubG9hZC9nZW9zaXRlLmRiIiwNCiAgICAgICJkb3dubG9hZF9kZXRvdXIiOiAiQmVzdCBMYXRlbmN5Ig0KICAgIH0sDQogICAgInJ1bGVzIjogWw0KICAgICAgew0KICAgICAgICAib3V0Ym91bmQiOiAiZG5zLW91dCIsDQogICAgICAgICJwb3J0IjogWw0KICAgICAgICAgIDUzDQogICAgICAgIF0NCiAgICAgIH0sDQogICAgICB7DQogICAgICAgICJuZXR3b3JrIjogInVkcCIsDQogICAgICAgICJwb3J0IjogWw0KICAgICAgICAgIDQ0Mw0KICAgICAgICBdLA0KICAgICAgICAib3V0Ym91bmQiOiAiYmxvY2siDQogICAgICB9LA0KICAgICAgew0KICAgICAgICAiZG9tYWluX3N1ZmZpeCI6IFsNCiAgICAgICAgICAiZ29vZ2xlc3luZGljYXRpb24uY29tIg0KICAgICAgICBdLA0KICAgICAgICAib3V0Ym91bmQiOiAiSW50ZXJuZXQiDQogICAgICB9LA0KICAgICAgew0KICAgICAgICAiZ2Vvc2l0ZSI6IFsNCiAgICAgICAgICAicnVsZS1hZHMiLA0KICAgICAgICAgICJvaXNkLWZ1bGwiDQogICAgICAgIF0sDQogICAgICAgICJvdXRib3VuZCI6ICJPcHRpb24gQURzIg0KICAgICAgfSwNCiAgICAgIHsNCiAgICAgICAgImdlb3NpdGUiOiBbDQogICAgICAgICAgIm9pc2QtbnNmdyIsDQogICAgICAgICAgImNhdGVnb3J5LXBvcm4iDQogICAgICAgIF0sDQogICAgICAgICJvdXRib3VuZCI6ICJPcHRpb24gUDBybiINCiAgICAgIH0sDQogICAgICB7DQogICAgICAgICJnZW9zaXRlIjogIndoYXRzYXBwIiwNCiAgICAgICAgIm91dGJvdW5kIjogIldoYXRzQXBwIg0KICAgICAgfSwNCiAgICAgIHsNCiAgICAgICAgImdlb2lwIjogImZhY2Vib29rIiwNCiAgICAgICAgInBvcnQiOiBbDQogICAgICAgICAgMzQ3OCwNCiAgICAgICAgICA0MjQ0LA0KICAgICAgICAgIDUyMjIsDQogICAgICAgICAgNTIyMywNCiAgICAgICAgICA1MjQyLA0KICAgICAgICAgIDQ1Mzk1LA0KICAgICAgICAgIDUwMzE4LA0KICAgICAgICAgIDU5MjM0DQogICAgICAgIF0sDQogICAgICAgICJvdXRib3VuZCI6ICJXaGF0c0FwcCINCiAgICAgIH0sDQogICAgICB7DQogICAgICAgICJwcm90b2NvbCI6ICJzdHVuIiwNCiAgICAgICAgIm91dGJvdW5kIjogIkludGVybmV0Ig0KICAgICAgfSwNCiAgICAgIHsNCiAgICAgICAgImdlb3NpdGUiOiBbDQogICAgICAgICAgInJ1bGUtaW5kbyINCiAgICAgICAgXSwNCiAgICAgICAgIm91dGJvdW5kIjogIkxvY2sgUmVnaW9uIElEIg0KICAgICAgfSwNCiAgICAgIHsNCiAgICAgICAgIm5ldHdvcmsiOiAidWRwIiwNCiAgICAgICAgInBvcnQiOiBbDQogICAgICAgICAgMjcwMiwNCiAgICAgICAgICAzNzAyLA0KICAgICAgICAgIDg0NDMsDQogICAgICAgICAgOTEyMCwNCiAgICAgICAgICA5OTkyLA0KICAgICAgICAgIDEwMDAzLA0KICAgICAgICAgIDYwMDYsDQogICAgICAgICAgNjAwOCwNCiAgICAgICAgICA2Njc0LA0KICAgICAgICAgIDc4ODksDQogICAgICAgICAgODAwOCwNCiAgICAgICAgICA4MTMwLA0KICAgICAgICAgIDg0NDMsDQogICAgICAgICAgOTAwOCwNCiAgICAgICAgICA5MTIwLA0KICAgICAgICAgIDEwMTAwLA0KICAgICAgICAgIDEyMDA4LA0KICAgICAgICAgIDEzMDA4LA0KICAgICAgICAgIDgwMTEsDQogICAgICAgICAgOTAzMCwNCiAgICAgICAgICAxMDQ5MSwNCiAgICAgICAgICAxMDYxMiwNCiAgICAgICAgICAxMjIzNSwNCiAgICAgICAgICAxMzAwNCwNCiAgICAgICAgICAxMzc0OCwNCiAgICAgICAgICAxNzAwMCwNCiAgICAgICAgICAxNzUwMCwNCiAgICAgICAgICAxMDAzOSwNCiAgICAgICAgICAxMDA5NiwNCiAgICAgICAgICAxMTQ1NSwNCiAgICAgICAgICAxMzg5NCwNCiAgICAgICAgICAxMzk3Mg0KICAgICAgICBdLA0KICAgICAgICAicG9ydF9yYW5nZSI6IFsNCiAgICAgICAgICAiNDAwMTo0MDA5IiwNCiAgICAgICAgICAiNTAwMDo1MjIxIiwNCiAgICAgICAgICAiNTIyNDo1MjQxIiwNCiAgICAgICAgICAiNTI0Mzo1Mjg3IiwNCiAgICAgICAgICAiNTI4OTo1MzUyIiwNCiAgICAgICAgICAiNTM1NDo1NTA5IiwNCiAgICAgICAgICAiNTUxNzo1NTI5IiwNCiAgICAgICAgICAiNTU1MTo1NTU5IiwNCiAgICAgICAgICAiNTYwMTo1NzAwIiwNCiAgICAgICAgICAiOTAwMDo5MDEwIiwNCiAgICAgICAgICAiMzAwMDA6MzAzMDAiLA0KICAgICAgICAgICI3MDA2OjcwMDgiLA0KICAgICAgICAgICI4MDAxOjgwMTIiLA0KICAgICAgICAgICIxMDAwMDoxMDAxNSIsDQogICAgICAgICAgIjExMDAwOjExMDE5IiwNCiAgICAgICAgICAiMTAxMDE6MTAyMDEiLA0KICAgICAgICAgICIxMDA4MDoxMDExMCIsDQogICAgICAgICAgIjE3MDAwOjE4MDAwIg0KICAgICAgICBdLA0KICAgICAgICAib3V0Ym91bmQiOiAiR0FNRVNNQVgoTUwvRkYvQU9WKSINCiAgICAgIH0sDQogICAgICB7DQogICAgICAgICJuZXR3b3JrIjogInRjcCIsDQogICAgICAgICJwb3J0IjogWw0KICAgICAgICAgIDU1MTcsDQogICAgICAgICAgODQ0MywNCiAgICAgICAgICA5NDQzLA0KICAgICAgICAgIDEwMDAzLA0KICAgICAgICAgIDYwMDYsDQogICAgICAgICAgNjAwOCwNCiAgICAgICAgICA2Njc0LA0KICAgICAgICAgIDc4ODksDQogICAgICAgICAgOTAwNiwNCiAgICAgICAgICA5MTM3LA0KICAgICAgICAgIDEyMDA2LA0KICAgICAgICAgIDEyMDA4LA0KICAgICAgICAgIDEzMDA2LA0KICAgICAgICAgIDE1MDA2LA0KICAgICAgICAgIDIwNTYxLA0KICAgICAgICAgIDM5MDAzLA0KICAgICAgICAgIDM5MDA2LA0KICAgICAgICAgIDM5Njk4LA0KICAgICAgICAgIDM5Nzc5LA0KICAgICAgICAgIDM5ODAwLA0KICAgICAgICAgIDEwMDEyLA0KICAgICAgICAgIDE0MDAwLA0KICAgICAgICAgIDE1NjkyLA0KICAgICAgICAgIDE3MDAwLA0KICAgICAgICAgIDE3NTAwLA0KICAgICAgICAgIDE4MDgxLA0KICAgICAgICAgIDIwMzcxLA0KICAgICAgICAgIDgwMTMsDQogICAgICAgICAgODA4NSwNCiAgICAgICAgICAxODA4MiwNCiAgICAgICAgICAyMDAwMCwNCiAgICAgICAgICA1MDAwMCwNCiAgICAgICAgICA2NTAxMCwNCiAgICAgICAgICA2NTA1MCwNCiAgICAgICAgICA4MDEzLA0KICAgICAgICAgIDE4MDgyLA0KICAgICAgICAgIDIwMTY2LA0KICAgICAgICAgIDMxMDAzLA0KICAgICAgICAgIDMzNDQ1LA0KICAgICAgICAgIDUwMDAwLA0KICAgICAgICAgIDQyNDcyLA0KICAgICAgICAgIDE0NDIyLA0KICAgICAgICAgIDE2OTk5LA0KICAgICAgICAgIDgwMTMsDQogICAgICAgICAgODg4OCwNCiAgICAgICAgICAzMDAzMSwNCiAgICAgICAgICAxNDAwOSwNCiAgICAgICAgICA0MDAwNSwNCiAgICAgICAgICA5MzM5LA0KICAgICAgICAgIDIwOTksDQogICAgICAgICAgODA4OCwNCiAgICAgICAgICA1NjkyLA0KICAgICAgICAgIDgwODUsDQogICAgICAgICAgODUwMCwNCiAgICAgICAgICAxMDAwMCwNCiAgICAgICAgICAxMDA4MiwNCiAgICAgICAgICAyMDAwMCwNCiAgICAgICAgICAyNTAwMCwNCiAgICAgICAgICAyOTEzNCwNCiAgICAgICAgICAzMTAwMw0KICAgICAgICBdLA0KICAgICAgICAicG9ydF9yYW5nZSI6IFsNCiAgICAgICAgICAiNTAwMDo1MjIxIiwNCiAgICAgICAgICAiNTIyNDo1MjI3IiwNCiAgICAgICAgICAiNTIyOTo1MjQxIiwNCiAgICAgICAgICAiNTI0Mzo1Mjg3IiwNCiAgICAgICAgICAiNTI4OTo1MzUyIiwNCiAgICAgICAgICAiNTM1NDo1NTA5IiwNCiAgICAgICAgICAiNTUyMDo1NTI5IiwNCiAgICAgICAgICAiNTU1MTo1NTU5IiwNCiAgICAgICAgICAiNTYwMTo1NzAwIiwNCiAgICAgICAgICAiOTAwMDo5MDEwIiwNCiAgICAgICAgICAiMzAwMDA6MzAzMDAiLA0KICAgICAgICAgICI3MDA2OjcwMDgiLA0KICAgICAgICAgICI4MDAxOjgwMTIiLA0KICAgICAgICAgICIxMDAwMDoxMDAxMiIsDQogICAgICAgICAgIjExMDAwOjExMDE5IiwNCiAgICAgICAgICAiODA4NTo4MDg4IiwNCiAgICAgICAgICAiMTAwMDA6MTAwMTkiLA0KICAgICAgICAgICIyMDAwMDoyMDAwMiIsDQogICAgICAgICAgIjEwMDAwOjEwMDAxIiwNCiAgICAgICAgICAiMjAwMDA6MjAwMDEiLA0KICAgICAgICAgICI5MzMwOjkzNDAiLA0KICAgICAgICAgICIyMDgwOjIwOTkiLA0KICAgICAgICAgICI5MTAwOjkyMDAiLA0KICAgICAgICAgICI4MjMwOjgyNTAiLA0KICAgICAgICAgICI4MTEwOjgxMjAiLA0KICAgICAgICAgICIyNzAwMDoyODk5OCIsDQogICAgICAgICAgIjc3NzA6Nzc5MCIsDQogICAgICAgICAgIjQ0NTkwOjQ0NjEwIiwNCiAgICAgICAgICAiMTA1MDA6MTA1MTUiLA0KICAgICAgICAgICIyNzAxNToyNzAzMCIsDQogICAgICAgICAgIjI3MDM2OjI3MDM3IiwNCiAgICAgICAgICAiMzkxOTA6MzkyMDAiLA0KICAgICAgICAgICI0OTAwMTo0OTE5MCIsDQogICAgICAgICAgIjgzOTM6ODQwMCINCiAgICAgICAgXSwNCiAgICAgICAgIm91dGJvdW5kIjogIlJvdXRlIFBvcnQgR2FtZSINCiAgICAgIH0sDQogICAgICB7DQogICAgICAgICJuZXR3b3JrIjogInVkcCIsDQogICAgICAgICJwb3J0IjogWw0KICAgICAgICAgIDI3MDIsDQogICAgICAgICAgMzcwMiwNCiAgICAgICAgICA4NDQzLA0KICAgICAgICAgIDkxMjAsDQogICAgICAgICAgOTk5MiwNCiAgICAgICAgICAxMDAwMywNCiAgICAgICAgICA2MDA2LA0KICAgICAgICAgIDYwMDgsDQogICAgICAgICAgNjY3NCwNCiAgICAgICAgICA3ODg5LA0KICAgICAgICAgIDgwMDgsDQogICAgICAgICAgODEzMCwNCiAgICAgICAgICA4NDQzLA0KICAgICAgICAgIDkwMDgsDQogICAgICAgICAgOTEyMCwNCiAgICAgICAgICAxMDEwMCwNCiAgICAgICAgICAxMjAwOCwNCiAgICAgICAgICAxMzAwOCwNCiAgICAgICAgICA4NzAwLA0KICAgICAgICAgIDEwMDEzLA0KICAgICAgICAgIDEwMDE5LA0KICAgICAgICAgIDEwMDM5LA0KICAgICAgICAgIDEwMDk2LA0KICAgICAgICAgIDEwNDkxLA0KICAgICAgICAgIDEwNjEyLA0KICAgICAgICAgIDExNDU1LA0KICAgICAgICAgIDEyMjM1LA0KICAgICAgICAgIDEzNzQ4LA0KICAgICAgICAgIDEzODk0LA0KICAgICAgICAgIDEzOTcyLA0KICAgICAgICAgIDE3MDAwLA0KICAgICAgICAgIDE3NTAwLA0KICAgICAgICAgIDg3MDAsDQogICAgICAgICAgOTAzMCwNCiAgICAgICAgICA4MDExLA0KICAgICAgICAgIDkwMzAsDQogICAgICAgICAgMTA0OTEsDQogICAgICAgICAgMTA2MTIsDQogICAgICAgICAgMTIyMzUsDQogICAgICAgICAgMTMwMDQsDQogICAgICAgICAgMTM3NDgsDQogICAgICAgICAgMTcwMDAsDQogICAgICAgICAgMTc1MDAsDQogICAgICAgICAgMTAwMzksDQogICAgICAgICAgMTAwOTYsDQogICAgICAgICAgMTE0NTUsDQogICAgICAgICAgMTM4OTQsDQogICAgICAgICAgMTM5NzIsDQogICAgICAgICAgNDI0NzIsDQogICAgICAgICAgNTEwMCwNCiAgICAgICAgICAzOTAwMCwNCiAgICAgICAgICA0MzgwLA0KICAgICAgICAgIDI3MDM2LA0KICAgICAgICAgIDE0NDIyLA0KICAgICAgICAgIDE2OTk5LA0KICAgICAgICAgIDgwMTMsDQogICAgICAgICAgODg4OCwNCiAgICAgICAgICA4MDAwLA0KICAgICAgICAgIDMwMTA0LA0KICAgICAgICAgIDE0MDA5LA0KICAgICAgICAgIDQwMDA1LA0KICAgICAgICAgIDgwODgsDQogICAgICAgICAgNTAxMCwNCiAgICAgICAgICA2NjUwLA0KICAgICAgICAgIDgwMTEsDQogICAgICAgICAgODcwMCwNCiAgICAgICAgICAyMDAwMCwNCiAgICAgICAgICAyNTAwMCwNCiAgICAgICAgICAyOTEzNCwNCiAgICAgICAgICAzMDAwMA0KICAgICAgICBdLA0KICAgICAgICAicG9ydF9yYW5nZSI6IFsNCiAgICAgICAgICAiNDAwMTo0MDA5IiwNCiAgICAgICAgICAiNTAwMDo1MjIxIiwNCiAgICAgICAgICAiNTIyNDo1MjQxIiwNCiAgICAgICAgICAiNTI0Mzo1Mjg3IiwNCiAgICAgICAgICAiNTI4OTo1MzUyIiwNCiAgICAgICAgICAiNTM1NDo1NTA5IiwNCiAgICAgICAgICAiNTUxNzo1NTI5IiwNCiAgICAgICAgICAiNTU1MTo1NTU5IiwNCiAgICAgICAgICAiNTYwMTo1NzAwIiwNCiAgICAgICAgICAiOTAwMDo5MDEwIiwNCiAgICAgICAgICAiMzAwMDA6MzAzMDAiLA0KICAgICAgICAgICI3MDA2OjcwMDgiLA0KICAgICAgICAgICI4MDAxOjgwMTIiLA0KICAgICAgICAgICIxMDAwMDoxMDAxNSIsDQogICAgICAgICAgIjExMDAwOjExMDE5IiwNCiAgICAgICAgICAiNzA4Njo3OTk1IiwNCiAgICAgICAgICAiODAxMTo4MDEzIiwNCiAgICAgICAgICAiOTAzMDo5MDMxIiwNCiAgICAgICAgICAiMjAwMDA6MjAwMDIiLA0KICAgICAgICAgICIxMjA3MDoxMjQ2MCIsDQogICAgICAgICAgIjQxMTgyOjQxMTkyIiwNCiAgICAgICAgICAiNzUwMDo3OTk1IiwNCiAgICAgICAgICAiMTAwMTA6MTAwMTkiLA0KICAgICAgICAgICIyMDAwMDoyMDAwMSIsDQogICAgICAgICAgIjEwMTAxOjEwMjAxIiwNCiAgICAgICAgICAiMTAwODA6MTAxMTAiLA0KICAgICAgICAgICIxNzAwMDoxODAwMCIsDQogICAgICAgICAgIjUwNTU6NTA1OCIsDQogICAgICAgICAgIjIyMTAxOjIyMTAyIiwNCiAgICAgICAgICAiOTMzMDo5MzQwIiwNCiAgICAgICAgICAiMjcwMDA6Mjg5OTgiLA0KICAgICAgICAgICIxNjMwMDoxNjM1MCIsDQogICAgICAgICAgIjQwMDAwOjQwMDEwIiwNCiAgICAgICAgICAiNjA5NzA6NjA5ODAiLA0KICAgICAgICAgICIyNzAwMDoyNzAzMSIsDQogICAgICAgICAgIjQwMDAwOjQwMDEwIiwNCiAgICAgICAgICAiNzAwMDo4MDAwIiwNCiAgICAgICAgICAiODE4MDo4MTgxIiwNCiAgICAgICAgICAiMjcwMTY6MjcwMjQiLA0KICAgICAgICAgICI1NDAwMDo1NDAxMiINCiAgICAgICAgXSwNCiAgICAgICAgIm91dGJvdW5kIjogIlJvdXRlIFBvcnQgR2FtZSINCiAgICAgIH0sDQogICAgICB7DQogICAgICAgICJnZW9pcCI6IFsNCiAgICAgICAgICAiaWQiDQogICAgICAgIF0sDQogICAgICAgICJwb3J0IjogWw0KICAgICAgICAgIDIxLA0KICAgICAgICAgIDIyLA0KICAgICAgICAgIDIzLA0KICAgICAgICAgIDgwLA0KICAgICAgICAgIDgxLA0KICAgICAgICAgIDEyMywNCiAgICAgICAgICAxNDMsDQogICAgICAgICAgMTgyLA0KICAgICAgICAgIDE4MywNCiAgICAgICAgICAxOTQsDQogICAgICAgICAgNDQzLA0KICAgICAgICAgIDQ2NSwNCiAgICAgICAgICA1ODcsDQogICAgICAgICAgODUzLA0KICAgICAgICAgIDk5MywNCiAgICAgICAgICA5OTUsDQogICAgICAgICAgOTk4LA0KICAgICAgICAgIDIwNTIsDQogICAgICAgICAgMjA1MywNCiAgICAgICAgICAyMDgyLA0KICAgICAgICAgIDIwODMsDQogICAgICAgICAgMjA4NiwNCiAgICAgICAgICAyMDk1LA0KICAgICAgICAgIDIwOTYsDQogICAgICAgICAgNTIyMiwNCiAgICAgICAgICA1MjI4LA0KICAgICAgICAgIDUyMjksDQogICAgICAgICAgNTIzMCwNCiAgICAgICAgICA4MDAwLA0KICAgICAgICAgIDgwODAsDQogICAgICAgICAgODA4MSwNCiAgICAgICAgICA4MDg4LA0KICAgICAgICAgIDg0NDMsDQogICAgICAgICAgODg4MCwNCiAgICAgICAgICA4ODgzLA0KICAgICAgICAgIDg4ODgsDQogICAgICAgICAgODg4OSwNCiAgICAgICAgICA0MjA2OQ0KICAgICAgICBdLA0KICAgICAgICAib3V0Ym91bmQiOiAiTG9jayBSZWdpb24gSUQiDQogICAgICB9LA0KICAgICAgew0KICAgICAgICAicG9ydCI6IFsNCiAgICAgICAgICAyMSwNCiAgICAgICAgICAyMiwNCiAgICAgICAgICAyMywNCiAgICAgICAgICA4MCwNCiAgICAgICAgICA4MSwNCiAgICAgICAgICAxMjMsDQogICAgICAgICAgMTQzLA0KICAgICAgICAgIDE4MiwNCiAgICAgICAgICAxODMsDQogICAgICAgICAgMTk0LA0KICAgICAgICAgIDQ0MywNCiAgICAgICAgICA0NjUsDQogICAgICAgICAgNTg3LA0KICAgICAgICAgIDg1MywNCiAgICAgICAgICA5OTMsDQogICAgICAgICAgOTk1LA0KICAgICAgICAgIDk5OCwNCiAgICAgICAgICAyMDUyLA0KICAgICAgICAgIDIwNTMsDQogICAgICAgICAgMjA4MiwNCiAgICAgICAgICAyMDgzLA0KICAgICAgICAgIDIwODYsDQogICAgICAgICAgMjA5NSwNCiAgICAgICAgICAyMDk2LA0KICAgICAgICAgIDUyMjIsDQogICAgICAgICAgNTIyOCwNCiAgICAgICAgICA1MjI5LA0KICAgICAgICAgIDUyMzAsDQogICAgICAgICAgODAwMCwNCiAgICAgICAgICA4MDgwLA0KICAgICAgICAgIDgwODEsDQogICAgICAgICAgODA4OCwNCiAgICAgICAgICA4NDQzLA0KICAgICAgICAgIDg4ODAsDQogICAgICAgICAgODg4MywNCiAgICAgICAgICA4ODg4LA0KICAgICAgICAgIDg4ODksDQogICAgICAgICAgNDIwNjkNCiAgICAgICAgXSwNCiAgICAgICAgIm91dGJvdW5kIjogIkludGVybmV0Ig0KICAgICAgfSwNCiAgICAgIHsNCiAgICAgICAgInBvcnRfcmFuZ2UiOiBbDQogICAgICAgICAgIjEwMjM6NDIwNjgiLA0KICAgICAgICAgICI0MjA3MDo2NTUzNSINCiAgICAgICAgXSwNCiAgICAgICAgIm91dGJvdW5kIjogIlJvdXRlIFBvcnQgR2FtZSINCiAgICAgIH0NCiAgICBdDQogIH0NCn0=
+{
+  "log": {
+    "disabled": false,
+    "level": "warn",
+    "timestamp": true
+  },
+  "experimental": {
+    "clash_api": {
+      "external_controller": "0.0.0.0:9090",
+      "external_ui": "yacd",
+      "external_ui_download_url": "https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip",
+      "external_ui_download_detour": "Internet",
+      "secret": "",
+      "default_mode": "rule",
+      "store_selected": true,
+      "cache_file": "clash.db"
+    }
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "Internet-dns",
+        "address": "1.0.0.1",
+        "strategy": "ipv4_only",
+        "detour": "Internet"
+      },
+      {
+        "tag": "Best Latency-dns",
+        "address": "1.1.1.1",
+        "strategy": "ipv4_only",
+        "detour": "Best Latency"
+      },
+      {
+        "tag": "Lock Region ID-dns",
+        "address": "8.8.8.8",
+        "strategy": "ipv4_only",
+        "detour": "Lock Region ID"
+      },
+      {
+        "tag": "WhatsApp-dns",
+        "address": "8.8.4.4",
+        "strategy": "ipv4_only",
+        "detour": "WhatsApp"
+      },
+      {
+        "tag": "GAMESMAX(ML/FF/AOV)-dns",
+        "address": "8.8.4.4",
+        "strategy": "ipv4_only",
+        "detour": "GAMESMAX(ML/FF/AOV)"
+      },
+      {
+        "tag": "Route Port Game-dns",
+        "address": "9.9.9.9",
+        "strategy": "ipv4_only",
+        "detour": "Route Port Game"
+      },
+      {
+        "tag": "direct-dns",
+        "address": "149.112.112.112",
+        "strategy": "ipv4_only",
+        "detour": "direct"
+      },
+      {
+        "tag": "block-dns",
+        "address": "rcode://success"
+      }
+    ],
+    "rules": [
+      {
+        "domain_suffix": [
+          ".arpa.",
+          ".arpa"
+        ],
+        "server": "block-dns",
+        "rewrite_ttl": 20
+      },
+      {
+        "network": "udp",
+        "port": 443,
+        "server": "block-dns",
+        "rewrite_ttl": 20
+      },
+      {
+        "geosite": "rule-malicious",
+        "server": "block-dns",
+        "rewrite_ttl": 20
+      },
+      {
+        "outbound": "Internet",
+        "server": "Internet-dns",
+        "rewrite_ttl": 20
+      },
+      {
+        "outbound": "Best Latency",
+        "server": "Best Latency-dns",
+        "rewrite_ttl": 20
+      },
+      {
+        "outbound": "Lock Region ID",
+        "server": "Lock Region ID-dns",
+        "rewrite_ttl": 20
+      },
+      {
+        "outbound": "WhatsApp",
+        "server": "WhatsApp-dns",
+        "rewrite_ttl": 20
+      },
+      {
+        "outbound": "GAMESMAX(ML/FF/AOV)",
+        "server": "GAMESMAX(ML/FF/AOV)-dns",
+        "rewrite_ttl": 20
+      },
+      {
+        "outbound": "Route Port Game",
+        "server": "Route Port Game-dns",
+        "rewrite_ttl": 20
+      },
+      {
+        "outbound": "direct",
+        "server": "direct-dns",
+        "rewrite_ttl": 20
+      },
+      {
+        "outbound": "any",
+        "server": "direct-dns",
+        "rewrite_ttl": 20
+      }
+    ],
+    "reverse_mapping": true,
+    "strategy": "ipv4_only",
+    "independent_cache": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "interface_name": "tun0",
+      "inet4_address": "172.19.0.1/30",
+      "inet6_address": "fdfe:dcba:9876::1/126",
+      "mtu": 1358,
+      "auto_route": true,
+      "strict_route": true,
+      "stack": "gvisor",
+      "endpoint_independent_nat": true,
+      "sniff": true
+    },
+    {
+      "listen": "0.0.0.0",
+      "listen_port": 2080,
+      "sniff": true,
+      "tag": "mixed-in",
+      "type": "mixed"
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "Internet",
+      "outbounds": [
+        "Best Latency",
+        "RezaJan[104.16.210.12]",
+        "RezaJan[172.67.68.134]",
+        "RezaJan[188.114.97.1]",
+        "RezaJan[203.24.108.2]",
+        "RezaJan[203.28.8.3]",
+        "RezaJan[104.26.2.238]",
+        "RezaJan[mci]",
+        "RezaJan[mtn]",
+        "RezaJan[tgju]",
+        "RezaJan"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "Best Latency",
+      "outbounds": [
+        "RezaJan[104.16.210.12]",
+        "RezaJan[172.67.68.134]",
+        "RezaJan[188.114.97.1]",
+        "RezaJan[203.24.108.2]",
+        "RezaJan[203.28.8.3]",
+        "RezaJan[104.26.2.238]",
+        "RezaJan[mci]",
+        "RezaJan[mtn]",
+        "RezaJan[tgju]",
+        "RezaJan"
+      ],
+      "url": "https://detectportal.firefox.com/success.txt",
+      "interval": "1m0s"
+    },
+    {
+      "type": "selector",
+      "tag": "Lock Region ID",
+      "outbounds": [
+        "RezaJan[104.16.210.12]",
+        "RezaJan[172.67.68.134]",
+        "RezaJan[188.114.97.1]",
+        "RezaJan[203.24.108.2]",
+        "RezaJan[203.28.8.3]",
+        "RezaJan[104.26.2.238]",
+        "RezaJan[mci]",
+        "RezaJan[mtn]",
+        "RezaJan[tgju]",
+        "RezaJan"
+      ]
+    },
+    {
+      "type": "vless",
+      "tag": "RezaJan[104.16.210.12]",
+      "server": "104.16.210.12",
+      "server_port": 443,
+      "uuid": "72b4bdf2-512a-405d-a084-88202bd56913",
+      "tls": {
+        "enabled": true,
+        "server_name": "cf.step-by-step.space",
+        "insecure": true
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "pizjgrpc"
+      },
+      "domain_strategy": "ipv4_only",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "RezaJan[172.67.68.134]",
+      "server": "172.67.68.134",
+      "server_port": 443,
+      "uuid": "72b4bdf2-512a-405d-a084-88202bd56913",
+      "tls": {
+        "enabled": true,
+        "server_name": "cf.step-by-step.space",
+        "insecure": true
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "pizjgrpc"
+      },
+      "domain_strategy": "ipv4_only",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "RezaJan[188.114.97.1]",
+      "server": "188.114.97.1",
+      "server_port": 443,
+      "uuid": "72b4bdf2-512a-405d-a084-88202bd56913",
+      "tls": {
+        "enabled": true,
+        "server_name": "cf.step-by-step.space",
+        "insecure": true
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "pizjgrpc"
+      },
+      "domain_strategy": "ipv4_only",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "RezaJan[203.24.108.2]",
+      "server": "203.24.108.2",
+      "server_port": 443,
+      "uuid": "72b4bdf2-512a-405d-a084-88202bd56913",
+      "tls": {
+        "enabled": true,
+        "server_name": "cf.step-by-step.space",
+        "insecure": true
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "pizjgrpc"
+      },
+      "domain_strategy": "ipv4_only",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "RezaJan[203.28.8.3]",
+      "server": "203.28.8.3",
+      "server_port": 443,
+      "uuid": "72b4bdf2-512a-405d-a084-88202bd56913",
+      "tls": {
+        "enabled": true,
+        "server_name": "cf.step-by-step.space",
+        "insecure": true
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "pizjgrpc"
+      },
+      "domain_strategy": "ipv4_only",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "RezaJan[104.26.2.238]",
+      "server": "104.26.2.238",
+      "server_port": 443,
+      "uuid": "72b4bdf2-512a-405d-a084-88202bd56913",
+      "tls": {
+        "enabled": true,
+        "server_name": "cf.step-by-step.space",
+        "insecure": true
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "pizjgrpc"
+      },
+      "domain_strategy": "ipv4_only",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "RezaJan[mci]",
+      "server": "mci.ircf.space",
+      "server_port": 443,
+      "uuid": "72b4bdf2-512a-405d-a084-88202bd56913",
+      "tls": {
+        "enabled": true,
+        "server_name": "cf.step-by-step.space",
+        "insecure": true
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "pizjgrpc"
+      },
+      "domain_strategy": "ipv4_only",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "RezaJan[mtn]",
+      "server": "mtn.ircf.space",
+      "server_port": 443,
+      "uuid": "72b4bdf2-512a-405d-a084-88202bd56913",
+      "tls": {
+        "enabled": true,
+        "server_name": "cf.step-by-step.space",
+        "insecure": true
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "pizjgrpc"
+      },
+      "domain_strategy": "ipv4_only",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "RezaJan[tgju]",
+      "server": "tgju.org",
+      "server_port": 443,
+      "uuid": "72b4bdf2-512a-405d-a084-88202bd56913",
+      "tls": {
+        "enabled": true,
+        "server_name": "cf.step-by-step.space",
+        "insecure": true
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "pizjgrpc"
+      },
+      "domain_strategy": "ipv4_only",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "RezaJan",
+      "server": "cf.step-by-step.space",
+      "server_port": 443,
+      "uuid": "72b4bdf2-512a-405d-a084-88202bd56913",
+      "tls": {
+        "enabled": true,
+        "server_name": "cf.step-by-step.space",
+        "insecure": true
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "pizjgrpc"
+      },
+      "domain_strategy": "ipv4_only",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "WhatsApp",
+      "outbounds": [
+        "direct",
+        "Internet",
+        "Best Latency",
+        "Lock Region ID"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "GAMESMAX(ML/FF/AOV)",
+      "outbounds": [
+        "direct",
+        "Internet",
+        "Best Latency",
+        "Lock Region ID"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "Route Port Game",
+      "outbounds": [
+        "direct",
+        "Internet",
+        "Best Latency",
+        "Lock Region ID"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "Option ADs",
+      "outbounds": [
+        "block",
+        "Internet"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "Option P0rn",
+      "outbounds": [
+        "block",
+        "Internet"
+      ]
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ],
+  "route": {
+    "auto_detect_interface": true,
+    "override_android_vpn": true,
+    "final": "Internet",
+    "geoip": {
+      "download_url": "https://github.com/malikshi/sing-box-geo/releases/latest/download/geoip.db",
+      "download_detour": "Best Latency"
+    },
+    "geosite": {
+      "download_url": "https://github.com/malikshi/v2ray-rules-dat/releases/latest/download/geosite.db",
+      "download_detour": "Best Latency"
+    },
+    "rules": [
+      {
+        "outbound": "dns-out",
+        "port": [
+          53
+        ]
+      },
+      {
+        "network": "udp",
+        "port": [
+          443
+        ],
+        "outbound": "block"
+      },
+      {
+        "domain_suffix": [
+          "googlesyndication.com"
+        ],
+        "outbound": "Internet"
+      },
+      {
+        "geosite": [
+          "rule-ads",
+          "oisd-full"
+        ],
+        "outbound": "Option ADs"
+      },
+      {
+        "geosite": [
+          "oisd-nsfw",
+          "category-porn"
+        ],
+        "outbound": "Option P0rn"
+      },
+      {
+        "geosite": "whatsapp",
+        "outbound": "WhatsApp"
+      },
+      {
+        "geoip": "facebook",
+        "port": [
+          3478,
+          4244,
+          5222,
+          5223,
+          5242,
+          45395,
+          50318,
+          59234
+        ],
+        "outbound": "WhatsApp"
+      },
+      {
+        "protocol": "stun",
+        "outbound": "Internet"
+      },
+      {
+        "geosite": [
+          "rule-indo"
+        ],
+        "outbound": "Lock Region ID"
+      },
+      {
+        "network": "udp",
+        "port": [
+          2702,
+          3702,
+          8443,
+          9120,
+          9992,
+          10003,
+          6006,
+          6008,
+          6674,
+          7889,
+          8008,
+          8130,
+          8443,
+          9008,
+          9120,
+          10100,
+          12008,
+          13008,
+          8011,
+          9030,
+          10491,
+          10612,
+          12235,
+          13004,
+          13748,
+          17000,
+          17500,
+          10039,
+          10096,
+          11455,
+          13894,
+          13972
+        ],
+        "port_range": [
+          "4001:4009",
+          "5000:5221",
+          "5224:5241",
+          "5243:5287",
+          "5289:5352",
+          "5354:5509",
+          "5517:5529",
+          "5551:5559",
+          "5601:5700",
+          "9000:9010",
+          "30000:30300",
+          "7006:7008",
+          "8001:8012",
+          "10000:10015",
+          "11000:11019",
+          "10101:10201",
+          "10080:10110",
+          "17000:18000"
+        ],
+        "outbound": "GAMESMAX(ML/FF/AOV)"
+      },
+      {
+        "network": "tcp",
+        "port": [
+          5517,
+          8443,
+          9443,
+          10003,
+          6006,
+          6008,
+          6674,
+          7889,
+          9006,
+          9137,
+          12006,
+          12008,
+          13006,
+          15006,
+          20561,
+          39003,
+          39006,
+          39698,
+          39779,
+          39800,
+          10012,
+          14000,
+          15692,
+          17000,
+          17500,
+          18081,
+          20371,
+          8013,
+          8085,
+          18082,
+          20000,
+          50000,
+          65010,
+          65050,
+          8013,
+          18082,
+          20166,
+          31003,
+          33445,
+          50000,
+          42472,
+          14422,
+          16999,
+          8013,
+          8888,
+          30031,
+          14009,
+          40005,
+          9339,
+          2099,
+          8088,
+          5692,
+          8085,
+          8500,
+          10000,
+          10082,
+          20000,
+          25000,
+          29134,
+          31003
+        ],
+        "port_range": [
+          "5000:5221",
+          "5224:5227",
+          "5229:5241",
+          "5243:5287",
+          "5289:5352",
+          "5354:5509",
+          "5520:5529",
+          "5551:5559",
+          "5601:5700",
+          "9000:9010",
+          "30000:30300",
+          "7006:7008",
+          "8001:8012",
+          "10000:10012",
+          "11000:11019",
+          "8085:8088",
+          "10000:10019",
+          "20000:20002",
+          "10000:10001",
+          "20000:20001",
+          "9330:9340",
+          "2080:2099",
+          "9100:9200",
+          "8230:8250",
+          "8110:8120",
+          "27000:28998",
+          "7770:7790",
+          "44590:44610",
+          "10500:10515",
+          "27015:27030",
+          "27036:27037",
+          "39190:39200",
+          "49001:49190",
+          "8393:8400"
+        ],
+        "outbound": "Route Port Game"
+      },
+      {
+        "network": "udp",
+        "port": [
+          2702,
+          3702,
+          8443,
+          9120,
+          9992,
+          10003,
+          6006,
+          6008,
+          6674,
+          7889,
+          8008,
+          8130,
+          8443,
+          9008,
+          9120,
+          10100,
+          12008,
+          13008,
+          8700,
+          10013,
+          10019,
+          10039,
+          10096,
+          10491,
+          10612,
+          11455,
+          12235,
+          13748,
+          13894,
+          13972,
+          17000,
+          17500,
+          8700,
+          9030,
+          8011,
+          9030,
+          10491,
+          10612,
+          12235,
+          13004,
+          13748,
+          17000,
+          17500,
+          10039,
+          10096,
+          11455,
+          13894,
+          13972,
+          42472,
+          5100,
+          39000,
+          4380,
+          27036,
+          14422,
+          16999,
+          8013,
+          8888,
+          8000,
+          30104,
+          14009,
+          40005,
+          8088,
+          5010,
+          6650,
+          8011,
+          8700,
+          20000,
+          25000,
+          29134,
+          30000
+        ],
+        "port_range": [
+          "4001:4009",
+          "5000:5221",
+          "5224:5241",
+          "5243:5287",
+          "5289:5352",
+          "5354:5509",
+          "5517:5529",
+          "5551:5559",
+          "5601:5700",
+          "9000:9010",
+          "30000:30300",
+          "7006:7008",
+          "8001:8012",
+          "10000:10015",
+          "11000:11019",
+          "7086:7995",
+          "8011:8013",
+          "9030:9031",
+          "20000:20002",
+          "12070:12460",
+          "41182:41192",
+          "7500:7995",
+          "10010:10019",
+          "20000:20001",
+          "10101:10201",
+          "10080:10110",
+          "17000:18000",
+          "5055:5058",
+          "22101:22102",
+          "9330:9340",
+          "27000:28998",
+          "16300:16350",
+          "40000:40010",
+          "60970:60980",
+          "27000:27031",
+          "40000:40010",
+          "7000:8000",
+          "8180:8181",
+          "27016:27024",
+          "54000:54012"
+        ],
+        "outbound": "Route Port Game"
+      },
+      {
+        "geoip": [
+          "id"
+        ],
+        "port": [
+          21,
+          22,
+          23,
+          80,
+          81,
+          123,
+          143,
+          182,
+          183,
+          194,
+          443,
+          465,
+          587,
+          853,
+          993,
+          995,
+          998,
+          2052,
+          2053,
+          2082,
+          2083,
+          2086,
+          2095,
+          2096,
+          5222,
+          5228,
+          5229,
+          5230,
+          8000,
+          8080,
+          8081,
+          8088,
+          8443,
+          8880,
+          8883,
+          8888,
+          8889,
+          42069
+        ],
+        "outbound": "Lock Region ID"
+      },
+      {
+        "port": [
+          21,
+          22,
+          23,
+          80,
+          81,
+          123,
+          143,
+          182,
+          183,
+          194,
+          443,
+          465,
+          587,
+          853,
+          993,
+          995,
+          998,
+          2052,
+          2053,
+          2082,
+          2083,
+          2086,
+          2095,
+          2096,
+          5222,
+          5228,
+          5229,
+          5230,
+          8000,
+          8080,
+          8081,
+          8088,
+          8443,
+          8880,
+          8883,
+          8888,
+          8889,
+          42069
+        ],
+        "outbound": "Internet"
+      },
+      {
+        "port_range": [
+          "1023:42068",
+          "42070:65535"
+        ],
+        "outbound": "Route Port Game"
+      }
+    ]
+  }
+}
