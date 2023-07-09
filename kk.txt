@@ -1,0 +1,16 @@
+proxies:
+  - name: M2083-JustYasin
+    server: admin.yasin-dev81.ir
+    port: 2083
+    type: vless
+    uuid: 008820f0-a6d0-4204-939f-edb423593719
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: admin.yasin-dev81.ir
+    ws-opts:
+      path: /downloader/yasin?ed=2048
+      headers:
+        Host: 
