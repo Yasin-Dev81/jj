@@ -12,16 +12,3 @@ proxies:
     servername: tm.MsV2ray.fun
     grpc-opts:
       grpc-service-name: @MsV2ray
-  - name: @V2rayNGn|🇷🇺|20.18
-    server: mtn.MsV2ray.space
-    port: 2083
-    type: vless
-    uuid: 4cd22529-b92a-40de-86c2-591d195a2d55
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    network: grpc
-    servername: tm.MsV2ray.cfd
-    grpc-opts:
-      grpc-service-name: @MsV2ray
