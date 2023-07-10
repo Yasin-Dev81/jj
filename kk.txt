@@ -6087,7 +6087,7 @@
       }
     ]
   }
-}
+},
 {
   "log": {
     "disabled": false,
