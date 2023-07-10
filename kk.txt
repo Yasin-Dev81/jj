@@ -1,5 +1,5 @@
-v6:
 {
+  "profile_name": "v6",
   "log": {
     "disabled": false,
     "level": "warn",
