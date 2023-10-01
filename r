@@ -1,0 +1,1 @@
+vless://15208046-9612-4605-b78f-01248f91a784@yasin-dev-4speed.space:443?type=ws&path=%2Fdownloader%2Fm%3Fed%3D2048&security=tls&fp=random&alpn=http%2F1.1%2Ch2&allowInsecure=1&sni=yasin-dev-4speed.space#M443-Jr
